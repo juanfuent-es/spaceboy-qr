@@ -1,5 +1,5 @@
 :root {
-  --stroke: 4px;
+  --stroke: 3px;
   --bg-overlay: #101010
 }
 
@@ -53,8 +53,17 @@ body.qr-scene .mindar-ui-scanning {
 
 @media (orientation: portrait) {
   body.qr-scene .mindar-ui-scanning {
-    transform: rotate(180deg); 
+    background-image: url(spaceboy-frame-portrait.svg);
   }
+  #logo {
+    top: 15px;
+    left: 15px;
+  }
+}
+
+body.qr-scene .mindar-ui-scanning .scanning .inner .scanline {
+  height: var(--stroke);
+  animation: move 4s linear infinite;
 }
 /* << SCAN */
 
@@ -69,5 +78,4 @@ body.qr-scene .mindar-ui-scanning {
   68% { opacity: 0.9}
   100% { opacity: 1}
 }
-
 /* << keyframes */
