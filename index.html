@@ -1,8 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDGK63MY2V"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NDGK63MY2V');
+    </script> -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AR Notebook | Spaceboy</title>
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
@@ -10,6 +16,11 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body class="qr-scene">
+    <!-- header >> -->
+    <a href="https://spaceboy.mx/" aria-label="spaceboy.mx" id="logo">
+      <img src="/spaceboy-logo.svg" alt="Spaceboy Logotype" width="100%">
+    </a>
+    <!-- << header -->
     <a-scene mindar-image="imageTargetSrc:./assets/target-image.mind;" filterMinCF:1000; filterBeta: 1000 color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
         <img id="brain" src="/notebook-brain.png"/>
